@@ -6,9 +6,13 @@
 //L’output del prezzo finale va messo fuori in forma umana (con massimo due decimali, per indicare centesimi sul prezzo). Questo richiederà un minimo di ricerca.
 
 //request the user's age through a prompt
-
+let userAge = parseInt(prompt('Type your age'));
+let age = userAge
+console.log (`This is user age: ${age}`)
 //request the number of kilometers that the passenger wishes to travel
-
+let km = parseInt(prompt('Type km numbers would you like to travel'));
+let kmNum = km;
+console.log (`This km numbers:  ${kmNum}`)
 //multiply the age of the passenger by the kilometers that want to travel
 
 
