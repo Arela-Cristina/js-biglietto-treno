@@ -5,3 +5,10 @@
 //va applicato uno sconto del 40% per gli over 65.
 //L’output del prezzo finale va messo fuori in forma umana (con massimo due decimali, per indicare centesimi sul prezzo). Questo richiederà un minimo di ricerca.
 
+//request the user's age through a prompt
+
+//request the number of kilometers that the passenger wishes to travel
+
+//multiply the age of the passenger by the kilometers that want to travel
+
+
