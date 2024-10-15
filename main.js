@@ -1,5 +1,7 @@
 //Train Ticket Rate
 
+//PARSEFLOAT(), prende un input (numero) , parsa ma  non  arrotonda. Acetta il valore anche con i decimali.
+
 //request the user's age through a prompt
 let userAge = parseInt(prompt('Type your age'));
 let age = userAge;
@@ -16,6 +18,9 @@ let fullRate = kmNum * kmRate;
 
 
 //Conditions
+//TOFIXED() CI RITORNA COME DATO UNA STRINGA, NON ISNERIRLO NELLE OPERAZIONE MATEMATICHE PERCHE POTREBBE OCCASSIONARE DEI BUG.
+//ALTERNATIVAMENTE SI PUO USARE NEW INTL.NUMBERFORMAT 
+
 //impose a 0% discount   as a fullRate
 let discount = fullRate.toFixed(2);
 console.log (`This is full rate $  ${fullRate}`);
@@ -31,3 +36,5 @@ if(age < 18){
     console.log(`Apply 40% discount for pax over 65 $ ${discount}`)
 }
 
+//CERCARE DI NON RIPETERE CODICE PERCHE SE CAMBIA LA FORMULA PER AVERE IL PREZZO FINALE, DEVO FARE MODIFICHE IN PUNTI DIVERSI.
+//SI POTEVA ASSEGNARE SOLO IL VALORE DE LO SCONTO  DENTRO LA CONDIZIONE CHE CORRISPONDE PER FARE ALLA FINE LA OPERAZIONE FINALE PER CALCOLARE LO SCONTO.
